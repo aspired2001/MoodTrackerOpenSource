@@ -63,7 +63,7 @@ const MoodTracker = () => {
     };
 
     return (
-        <div className="mood-tracker-container m-20 min-h-[30rem] max-h-[80vh] w-[30rem] shadow-lg shadow-slate-500 rounded-xl flex flex-col justify-between p-6 relative bg-[#252934] font-mono">
+        <div className="mood-tracker-container m-20 min-h-[30rem] max-h-[80vh] w-[30rem] shadow-lg shadow-slate-500 rounded-xl flex flex-col justify-between p-6 relative bg-[#091057] font-mono">
             {/* Subtle white gradient background overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white/10 rounded-xl pointer-events-none"></div>
             <h2 className="text-white font-mono text-[2.5rem] text-center mb-4">

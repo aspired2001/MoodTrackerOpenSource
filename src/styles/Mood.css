@@ -1,0 +1,80 @@
+.mood-tracker-container {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.custom-datepicker-input {
+    background-color: #1f1f2e;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #555;
+}
+
+.emoji-btn {
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.emoji-btn:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.emoji-btn.selected {
+    background-color: #f5f5f5;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-calendar.open {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.custom-calendar.closed {
+    animation: fadeOut 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+.mood-history-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.mood-history-list {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
